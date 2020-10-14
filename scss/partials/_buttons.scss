@@ -1,0 +1,14 @@
+/* BUTTONS */
+
+.button { 
+    background-color: $color-accent;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-block;
+    border-radius: 5px;
+
+&:hover {
+    background-color: $color-accent-dark;
+    }
+}
