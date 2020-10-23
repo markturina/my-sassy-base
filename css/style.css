@@ -43,7 +43,7 @@ body {
   line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 0.5em 0;
 }
 
@@ -140,4 +140,73 @@ body {
   body {
     font-size: 112.5%;
   }
+}
+/* SEMANTIC GRID */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2%;
+  margin-right: -2%;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.row > * {
+  margin: 2%;
+  flex-grow: 1;
+}
+.row.centered {
+  justify-content: center;
+}
+.row.swapped {
+  flex-direction: row-reverse;
+}
+.row.stacked {
+  flex-direction: column;
+}
+.row.align-top {
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .row > * {
+    flex-grow: 0;
+  }
+  .row .one-whole {
+    width: 96%;
+  }
+  .row .one-half {
+    width: 46%;
+  }
+  .row .one-third {
+    width: 29.3333%;
+  }
+  .row .two-thirds {
+    width: 62.6666%;
+  }
+  .row .one-fourth {
+    width: 21%;
+  }
+  .row .three-fourths {
+    width: 71%;
+  }
+  .row .push-one-fourth {
+    margin-left: 27%;
+  }
+  .row .push-one-third {
+    margin-left: 35.333%;
+  }
+  .row .push-one-half {
+    margin-left: 52%;
+  }
+  .row .centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.demo .row {
+  margin-bottom: 0;
+}
+.demo .row > * {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1%;
 }
