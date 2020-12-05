@@ -93,6 +93,19 @@ hr {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* SECTION HEADING */
+.section-heading {
+  font-size: 1em;
+  font-family: "Source Sans Pro", Helvetica, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 3px solid red;
+  display: table;
+  padding: 0 0 0.5 0;
+  margin: 1em auto 3em auto;
+}
+
 /* HELPERS */
 /* BUTTONS */
 .button {
@@ -209,4 +222,62 @@ body {
 .demo .row > * {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1%;
+}
+
+/* SITE STRUCTURE */
+.site-header {
+  background: #971313;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header a {
+  color: white;
+  text-decoration: none;
+}
+.site-header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.site-footer {
+  background: #971313;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 4em 0;
+}
+
+/* SITE-NAV */
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.site-nav a {
+  display: inline-block;
+  padding: 1em;
+  line-height: 1;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #ffc6c6;
+  text-align: center;
+  padding: 6em 0;
+}
+.hero h1 {
+  margin-bottom: 0.25em;
+}
+.hero p {
+  margin: 1em auto;
 }
